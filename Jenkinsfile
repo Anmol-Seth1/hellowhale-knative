@@ -28,8 +28,6 @@ pipeline {
         sh 'docker push anmolseth007/nodeapp:latest'
       }
     }
-  }
-
     stage('Deploy App') {
       steps {
         script {
@@ -37,6 +35,7 @@ pipeline {
         }
       }
     }
+  }
 
   post {
     always {
